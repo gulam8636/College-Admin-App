@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Faculty.AddTeacher">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        style="@style/Widget.Design.FloatingActionButton"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16sp"
+        android:src="@drawable/ic_add"
+        android:elevation="3sp"
+        app:fabSize="normal"
+        />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nursery"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="16sp"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#c1c1c1"
+                android:layout_marginVertical="8sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Nursery"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/NurseryNoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found_activity"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LKG"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="16sp"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#c1c1c1"
+                android:layout_marginVertical="8sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LKG"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LKGnoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found_activity"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UKG"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="16sp"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#c1c1c1"
+                android:layout_marginVertical="8sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/UKG"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/UKGnoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found_activity"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Standard One"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="16sp"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#c1c1c1"
+                android:layout_marginVertical="8sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdOneDepartment"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdOneNoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found_activity"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Standard Two"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="16sp"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#c1c1c1"
+                android:layout_marginVertical="8sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdTwoDepartment"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdTwoNoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found_activity"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Standard Three"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="16sp"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#c1c1c1"
+                android:layout_marginVertical="8sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdThreeDepartment"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdThreeNoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found_activity"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Standard Four"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="16sp"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#c1c1c1"
+                android:layout_marginVertical="8sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdFourDepartment"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdFourNoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found_activity"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Standard five"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="16sp"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#c1c1c1"
+                android:layout_marginVertical="8sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdFiveDepartment"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdFiveNoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found_activity"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Standard Six"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="16sp"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#c1c1c1"
+                android:layout_marginVertical="8sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdSixDepartment"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdSixNoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found_activity"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Standard Seven"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="16sp"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#c1c1c1"
+                android:layout_marginVertical="8sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdSeven"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdSevenNoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found_activity"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Standard Eight"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="16sp"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#c1c1c1"
+                android:layout_marginVertical="8sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdEightDepartment"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdEightNoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found_activity"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Standard Nine"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="16sp"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#c1c1c1"
+                android:layout_marginVertical="8sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdNineDepartment"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdNineNoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found_activity"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Standard Ten"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="16sp"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#c1c1c1"
+                android:layout_marginVertical="8sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdTenDepartment"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/StdTenNoData"
+                android:orientation="vertical">
+                <include layout="@layout/no_data_found_activity"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

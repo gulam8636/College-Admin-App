@@ -1,0 +1,91 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="Create A New Account"
+        android:gravity="center"
+        android:textSize="70dp"
+        android:id="@+id/loginid"
+        android:fontFamily="cursive"
+        android:textColor="#EA4C83"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_below="@id/loginid"
+        android:gravity="center"
+        android:id="@+id/emaillayoutoflogin"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:id="@+id/etemailofRegister"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_below="@+id/emaillayoutoflogin"
+        android:gravity="center"
+        android:id="@+id/passwordlayout"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:id="@+id/etpasswordofregister"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        android:scrollbarSize="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/BtnofRegister"
+        android:visibility="gone"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/BtnofRegister"
+        android:layout_height="wrap_content"
+        android:background="#3bb5ec"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Register"
+        android:layout_below="@id/passwordlayout"
+        android:textColor="#ffff" >
+
+    </androidx.appcompat.widget.AppCompatButton>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="Already registered login here"
+        android:id="@+id/Loginlink"
+        android:layout_below="@id/BtnofRegister"/>
+
+
+
+
+</RelativeLayout>

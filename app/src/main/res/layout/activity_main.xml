@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0CDBA1"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="300sp"
+        android:orientation="vertical"
+        android:background="@drawable/custom_layout"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="#1456A6"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome, "
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FDFDFC"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105sp"
+                android:layout_gravity="center_vertical"
+               android:text="user"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FDFDFC"
+                android:id="@+id/nameShow"
+
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:gravity="center"
+        android:background="@drawable/corner"
+        android:backgroundTint="#0CA083"
+        android:translationY="130sp"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/addNotice"
+                        android:layout_width="70sp"
+                        android:onClick="NoticeActivity"
+                        android:layout_marginTop="5sp"
+                        android:layout_height="70sp"
+                        android:background="@drawable/circle_green"
+                        android:padding="13sp"
+                        android:src="@drawable/ic_notice" />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5sp"
+                        android:textSize="13sp"
+                        android:text="Upload Notice"
+                        android:textColor="#ffff"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/addGallery"
+                        android:onClick="ImageActivity"
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:layout_marginTop="5sp"
+                        android:background="@drawable/circle_purple"
+                        android:padding="13sp"
+                        android:src="@drawable/ic_image" />
+                    
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5sp"
+                        android:textSize="13sp"
+                        android:text="Upload Image"
+                        android:textColor="#ffff"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="5sp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                   
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:id="@+id/addEbook"
+                        android:onClick="EbookActivity"
+                        android:background="@drawable/circle_pink"
+                        android:padding="13sp"
+                        android:src="@drawable/ic_upload" />
+                    
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:padding="5sp"
+                        android:text="Update Ebook"
+                        android:textColor="#ffff"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+               >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/addFaculty"
+                        android:onClick="FacultyActivity"
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:background="@drawable/circle_yellow"
+                        android:padding="13sp"
+                        android:src="@drawable/ic_faculty" />
+                    
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:padding="3sp"
+                        android:text="Update Faculty"
+                        android:textColor="#ffff"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/DeleteNotice"
+                        android:onClick="DeleteActivity"
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:background="@drawable/circle_red"
+                        android:padding="13sp"
+                        android:src="@drawable/ic_delete" />
+                    
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5sp"
+                        android:textSize="13sp"
+                        android:text="Delete Notice"
+                        android:textColor="#ffff"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="600sp"
+        android:padding="5sp"
+        android:backgroundTint="#1456A6"
+        android:layout_gravity="center"
+        android:text="Logout"
+        android:id="@+id/logout"
+        android:textSize="18sp"
+        android:layout_height="60sp"/>
+
+    </RelativeLayout>

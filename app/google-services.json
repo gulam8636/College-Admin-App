@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "980310437961",
+    "project_id": "svm-public-school",
+    "storage_bucket": "svm-public-school.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980310437961:android:029a30b57bba5911de0f98",
+        "android_client_info": {
+          "package_name": "com.mustafa.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980310437961-54rr6ng3kavp1mpig1ik0j17h0p0kcca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSWvbeaYV50QyAriki1SXZE3Kb1FUQxQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980310437961-54rr6ng3kavp1mpig1ik0j17h0p0kcca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
